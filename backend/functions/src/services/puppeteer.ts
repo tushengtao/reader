@@ -11,7 +11,8 @@ import puppeteerBlockResources from 'puppeteer-extra-plugin-block-resources';
 import puppeteerPageProxy from 'puppeteer-extra-plugin-page-proxy';
 import { SecurityCompromiseError, ServiceCrashedError } from '../shared/errors';
 import { TimeoutError } from 'puppeteer';
-import tldExtract from 'tld-extract';
+// import tldExtract from 'tld-extract';
+import { tldExtract } from './tld-extract';
 
 // Add this new function for cookie validation
 const validateCookie = (cookie: CookieParam) => {
